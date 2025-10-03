@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+apps/*/node_modules/
+packages/*/node_modules/
+
+# Build outputs
+dist/
+.next/
+.turbo/
+out/
+
+# Generated files
+*.log
+*.lock
+
+# Other common ignores
+.git/
+.idea/
+.claude/
+coverage/
+.nyc_output/
