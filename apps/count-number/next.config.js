@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 生产环境配置
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' 
+    ? process.env.NEXT_PUBLIC_BASE_URL 
+    : '',
+    
   webpack: (config, { isServer }) => {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -28,14 +34,20 @@ const nextConfig = {
     
     return config;
   },
+  
   async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'http://localhost:3000/:path*',
-      },
-    ]
+    // 仅在开发环境重写 API
+    if (process.env.NODE_ENV === 'development') {
+      return [
+        {
+          source: '/api/:path*',
+          destination: 'http://localhost:3000/:path*',
+        },
+      ]
+    }
+    return []
   },
+  
   async headers() {
     return [
       {

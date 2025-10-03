@@ -5,6 +5,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:ui": "turbo run ui:build",
+    "build:count-number": "cd apps/count-number && pnpm build",
     "dev": "turbo run dev",
     "dev:home": "cd apps/home && pnpm dev",
     "dev:about-us": "cd apps/about-us && pnpm dev",
