@@ -61,67 +61,6 @@ importers:
         specifier: latest
         version: 2.5.8
 
-  apps/about-us:
-    dependencies:
-      axios:
-        specifier: ^1.6.2
-        version: 1.12.1
-      next:
-        specifier: 14.2.5
-        version: 14.2.5(@babel/core@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react:
-        specifier: ^18
-        version: 18.3.1
-      react-dom:
-        specifier: ^18
-        version: 18.3.1(react@18.3.1)
-      zustand:
-        specifier: ^4.5.0
-        version: 4.5.7(@types/react@18.3.24)(react@18.3.1)
-    devDependencies:
-      '@types/node':
-        specifier: ^20
-        version: 20.19.14
-      '@types/react':
-        specifier: ^18
-        version: 18.3.24
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.3.7(@types/react@18.3.24)
-      autoprefixer:
-        specifier: ^10.4.21
-        version: 10.4.21(postcss@8.5.6)
-      eslint:
-        specifier: 9.18.0
-        version: 9.18.0(jiti@1.21.7)
-      eslint-config-next:
-        specifier: 14.2.5
-        version: 14.2.5(eslint@9.18.0(jiti@1.21.7))(typescript@5.9.2)
-      husky:
-        specifier: 8.0.0
-        version: 8.0.0
-      lint-staged:
-        specifier: 13.1.0
-        version: 13.1.0
-      postcss:
-        specifier: ^8
-        version: 8.5.6
-      prettier:
-        specifier: 3.4.2
-        version: 3.4.2
-      stylelint:
-        specifier: 15.7.0
-        version: 15.7.0(typescript@5.9.2)
-      stylelint-config-standard:
-        specifier: ^34.0.0
-        version: 34.0.0(stylelint@15.7.0(typescript@5.9.2))
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.17
-      typescript:
-        specifier: ^5
-        version: 5.9.2
-
   apps/count-number:
     dependencies:
       '@mono-repo/utils':
@@ -219,11 +158,11 @@ importers:
         specifier: ^5
         version: 5.9.2
 
-  apps/home:
+  apps/hello-world:
     dependencies:
-      axios:
-        specifier: ^1.6.2
-        version: 1.12.1
+      '@mono-repo/utils':
+        specifier: ^1.4.4
+        version: 1.4.4
       next:
         specifier: 14.2.5
         version: 14.2.5(@babel/core@7.28.4)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -233,9 +172,6 @@ importers:
       react-dom:
         specifier: ^18
         version: 18.3.1(react@18.3.1)
-      zustand:
-        specifier: ^4.5.0
-        version: 4.5.7(@types/react@18.3.24)(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^20
@@ -255,24 +191,12 @@ importers:
       eslint-config-next:
         specifier: 14.2.5
         version: 14.2.5(eslint@9.18.0(jiti@1.21.7))(typescript@5.9.2)
-      husky:
-        specifier: 8.0.0
-        version: 8.0.0
-      lint-staged:
-        specifier: 13.1.0
-        version: 13.1.0
       postcss:
         specifier: ^8
         version: 8.5.6
       prettier:
         specifier: 3.4.2
         version: 3.4.2
-      stylelint:
-        specifier: 15.7.0
-        version: 15.7.0(typescript@5.9.2)
-      stylelint-config-standard:
-        specifier: ^34.0.0
-        version: 34.0.0(stylelint@15.7.0(typescript@5.9.2))
       tailwindcss:
         specifier: ^3.4.1
         version: 3.4.17

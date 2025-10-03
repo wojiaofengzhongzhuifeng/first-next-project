@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "count-number-production",
-  "buildCommand": "cd apps/count-number && pnpm build",
-  "outputDirectory": "apps/count-number/.next",
+  "name": "multi-app-production",
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".next",
   "installCommand": "pnpm install",
   "framework": "nextjs",
   "functions": {
@@ -12,8 +12,16 @@
   },
   "rewrites": [
     {
+      "source": "/about-us",
+      "destination": "/apps/count-number/pages/count-number/about-us"
+    },
+    {
+      "source": "/count-number/:path*",
+      "destination": "/apps/count-number/pages/count-number/:path*"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/apps/count-number/pages/$1"
+      "destination": "/apps/hello-world/pages/$1"
     }
   ],
   "env": {
