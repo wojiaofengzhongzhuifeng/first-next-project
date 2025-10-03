@@ -1,8 +1,8 @@
 import { create } from 'zustand'
 import { devtools, persist } from 'zustand/middleware'
-import { GetCountNumberResponseData, SubmitCountNumberRequestData, SubmitCountNumberResponseData } from '../_api/get-count-number'
+import { GetCountNumberResponseData } from '../_api/get-count-number'
 import { getCountNumber } from '../_api/get-count-number'
-import { submitCountNumber } from '../_api/submit-count-number'
+import { submitCountNumber, SubmitCountNumberRequestData, SubmitCountNumberResponseData } from '../_api/submit-count-number'
 
 // 定义 State 接口
 interface CountNumberState {

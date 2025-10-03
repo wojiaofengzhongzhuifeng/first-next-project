@@ -101,7 +101,10 @@ function Page({ test }: { test: number }) {
               >
                 📊 数字操作域 - 负责数字的增减操作
               </div>
-              <NumberAction data={test} />
+              <div className="text-center p-4 bg-gray-100 rounded">
+                <p className="text-sm text-gray-600">数字操作组件已迁移到新的认证系统</p>
+                <p className="text-xs text-gray-500 mt-1">请登录后使用计数器功能</p>
+              </div>
             </div>
           </div>
 
@@ -115,7 +118,11 @@ function Page({ test }: { test: number }) {
               >
                 🎨 用户偏好域 - 负责主题、语言等设置
               </div>
-              <UserPreferences />
+              <div className="text-center p-4 bg-gray-100 rounded">
+                <p className="text-sm text-gray-600">用户偏好组件已迁移到新的认证系统</p>
+                <p className="text-xs text-gray-500 mt-1">当前主题: {theme}</p>
+                <p className="text-xs text-gray-500">当前语言: {language}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -131,7 +138,11 @@ function Page({ test }: { test: number }) {
             >
               📋 任务管理域 - 负责任务的增删改查
             </div>
-            <TaskManager />
+            <div className="text-center p-4 bg-gray-100 rounded">
+              <p className="text-sm text-gray-600">任务管理组件已迁移到新的认证系统</p>
+              <p className="text-xs text-gray-500 mt-1">当前任务数: {stats.total}</p>
+              <p className="text-xs text-gray-500">已完成: {stats.completed}</p>
+            </div>
           </div>
         </div>
 
